@@ -1,6 +1,12 @@
+const hotsumm = {
+  name: 'Yeolha',
+  age: 26,
+  gender: 'male',
+};
+
 const resolvers = {
   Query: {
-    name: () => 'Hotsumm',
+    person: () => hotsumm,
   },
 };
 
