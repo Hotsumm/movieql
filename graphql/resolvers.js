@@ -1,12 +1,9 @@
-const hotsumm = {
-  name: 'Yeolha',
-  age: 26,
-  gender: 'male',
-};
+import { people, getById } from './db';
 
 const resolvers = {
   Query: {
-    person: () => hotsumm,
+    people: () => people,
+    person: (_, { id }) => getById(id),
   },
 };
 
